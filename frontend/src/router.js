@@ -15,6 +15,9 @@ import DeliveryManager from "./components/listers/DeliveryCards"
 import DeliveryDetail from "./components/listers/DeliveryDetail"
 
 
+import MyPageView from "./components/MyPageView"
+import MyPageViewDetail from "./components/MyPageViewDetail"
+
 export default new Router({
     // mode: 'history',
     base: process.env.BASE_URL,
@@ -52,6 +55,17 @@ export default new Router({
                 component: DeliveryDetail
             },
 
+
+            {
+                path: '/myPages',
+                name: 'MyPageView',
+                component: MyPageView
+            },
+            {
+                path: '/myPages/:id',
+                name: 'MyPageViewDetail',
+                component: MyPageViewDetail
+            },
 
 
     ]
